@@ -1,0 +1,43 @@
+#html, #css, #js {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 32%;
+}
+#html {
+  bottom: 64%;
+}
+#css {
+  bottom: 32%;
+}
+#js {
+  bottom: 0%;
+}
+#save, #reload {
+  position: absolute;
+  top: 0;
+  border: none;
+  background-color: #BBB;
+  color: white;
+  cursor: pointer;
+  height: 4%;
+  width: 25%;
+  font-size: 160%;
+}
+#save:hover, #reload:hover {
+  background-color: gray;
+}
+#save {
+  left: 0;
+}
+#reload {
+  left: 25%;
+}
+#result {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  border-left: 1px solid #CCC;
+}
