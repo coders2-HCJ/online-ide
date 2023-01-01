@@ -29,6 +29,6 @@ function download(filename, text) {
 	document.body.removeChild(element);
 }
 document.getElementById("save").onclick = function() {
-	download("program.html", "<!DOCTYPE html><html><head><title>" + title.value + "</title><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><style>" + css.getValue() + "</style></head><body>" + html.getValue() + "<script>" + js.getValue() + "</script></body></html>");
+	download("program.html", "<!DOCTYPE html>\n<html>\n<head>\n<title>" + title.value + "</title>\n<meta charset='utf-8'>\n<meta name='viewport' content='width=device-width, initial-scale=1'>\n<style>\n" + css.getValue() + "\n</style>\n</head>\n<body>\n" + html.getValue() + "\n<script>\n" + js.getValue() + "\n</script>\n</body>\n</html>");
 };
 document.getElementById("reload").onclick = function() {showRes();};
