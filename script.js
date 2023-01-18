@@ -15,7 +15,9 @@ js.session.setUseWorker(false);
 function showRes() {
   result.src = "data:text/html;charset=utf-8," + encodeURIComponent("<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><style>" + css.getValue() + "</style></head><body>" + html.getValue() + "<script>" + js.getValue() + "<" + "/script></body></html>");
 }
-document.body.onkeyup = showRes;
+html.session.on("change", showRes);
+css.session.on("change", showRes);
+js.session.on("change", showRes);
 showRes();
 function download(filename, text) {
   var element = document.createElement("a");
