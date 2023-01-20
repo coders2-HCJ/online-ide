@@ -6,12 +6,15 @@ var result = document.getElementById("result");
 html.setTheme("ace/theme/light");
 html.session.setMode("ace/mode/html");
 html.session.setUseWorker(false);
+html.session.setUseWrapMode(true);
 css.setTheme("ace/theme/light");
 css.session.setMode("ace/mode/css");
 css.session.setUseWorker(false);
+css.session.setUseWrapMode(true);
 js.setTheme("ace/theme/light");
 js.session.setMode("ace/mode/javascript");
 js.session.setUseWorker(false);
+js.session.setUseWrapMode(true);
 function showRes() {
   result.src = "data:text/html;charset=utf-8," + encodeURIComponent("<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><style>" + css.getValue() + "</style></head><body>" + html.getValue() + "<script>" + js.getValue() + "<" + "/script></body></html>");
 }
